@@ -240,12 +240,3 @@ body {
   font-size: 10px;
   color: #efefef;
 }
-.author {
-  font-family: "Roboto", sans-serif;
-  color: #262626;
-  font-size: 14px;
-  transform: translateY(15px);
-}
-.author > a {
-  color: #262626;
-}
