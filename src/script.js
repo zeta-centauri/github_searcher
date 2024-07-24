@@ -11,6 +11,10 @@ searchButton.addEventListener("click", function (event) {
     searchInput.style.border = "solid 1px red";
     searchLabel.textContent = "Поле обязательно для заполнения!";
     searchLabel.style.color = "red";
+    searchInput.classList.add("animate__animated", "animate__headShake");
+    setTimeout(function () {
+      searchInput.classList.remove("animate__animated", "animate__headShake");
+    }, 300);
     searchInput.addEventListener("input", function (event) {
       if (searchInput.value == "") {
         searchInput.style.border = "solid 1px red";
