@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  transition: opacity 0.5s ease-out;
+}
+body {
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+}
+.container {
+  background-color: #262626;
+  -webkit-box-shadow: 4px 4px 49px 1px rgba(136, 136, 136, 0.53);
+  -moz-box-shadow: 4px 4px 49px 1px rgba(136, 136, 136, 0.53);
+  box-shadow: 4px 4px 49px 1px rgba(136, 136, 136, 0.53);
+  border-radius: 14px;
+  width: 400px;
+  height: 500px;
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/bg__search.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+}
+.search__form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+}
+.search__form > button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid #8c8c8c;
+  color: #efefef;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+.search__form > button:hover {
+  background-color: #070707;
+}
+.search__input {
+  height: 30px;
+  width: 200px;
+  border: solid 1px #efefef;
+  background-color: transparent;
+  border-radius: 6px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.search__input:focus {
+  outline: none;
+}
+.input__label {
+  position: absolute;
+  color: #8c8c8c;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  top: 35px;
+  left: 0px;
+  transition: all 0.2s ease-in-out;
+}
+.mark {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+  color: #8c8c8c;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+.mark > a {
+  color: #8c8c8c;
+}
+.mark > a:hover {
+  color: #565656;
+}
+.loading {
+  z-index: 3;
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #070707;
+  border-radius: 14px;
+}
+
+.loading__img {
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s ease;
+  animation: rotate 1s linear infinite;
+  z-index: 1000;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+}
+.header {
+  background-color: transparent;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 14px;
+}
+.user__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translateY(50px);
+  border: solid 3px white;
+  background-color: #070707;
+  object-position: calc();
+  object-fit: cover;
+}
+.back__button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.back__button:hover {
+  opacity: 1;
+}
+.info {
+  background-color: #2020209b;
+  padding: 70px 40px 20px 40px;
+  color: white;
+  height: 100%;
+  border-radius: 30px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.github__button {
+  border: 1px solid #8c8c8c;
+  border-radius: 8px;
+  padding: 5px 40px;
+  color: #8c8c8c;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.github__button:hover {
+  border-color: #efefef;
+}
+.github__button > i {
+  font-size: 16px;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.username {
+  font-size: 20px;
+}
+
+.login {
+  font-size: 14px;
+  font-weight: 400;
+}
+.user__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.user__info > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  font-weight: 300;
+  font-size: 12px;
+}
+.user__info > div > i {
+  font-size: 16px;
+}
+.notification {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #7575757a;
+  padding: 15px 20px;
+  border-radius: 6px;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.content {
+  border-radius: 14px;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg__search.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+}
+.notification__message {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  color: #efefef;
+}
+.author {
+  font-family: "Roboto", sans-serif;
+  color: #262626;
+  font-size: 14px;
+  transform: translateY(15px);
+}
+.author > a {
+  color: #262626;
+}

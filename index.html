@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>GitHub Searcher | Savik</title>
+    <link rel="shortcut icon" href="img/search.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+        <form action="" class="search__form">
+          <label for="search" class="input__label"
+            >Введите логин пользователя</label
+          >
+          <input type="text" class="search__input" id="search" />
+          <button>Далее</button>
+        </form>
+      </div>
+      <div class="loading">
+        <img src="img/bx-loader-alt.svg" alt="" class="loading__img" />
+      </div>
+      <div class="content">
+        <button class="back__button">
+          <img src="img/Vector.svg" alt="" class="back__button-img" />
+        </button>
+        <div class="header">
+          <img src="/img/image.png" alt="" class="user__avatar" />
+        </div>
+        <div class="info">
+          <div class="name">
+            <strong class="username">Неизвестно</strong>
+            <p class="login">Неизвестно</p>
+          </div>
+          <div class="user__info">
+            <div>
+              <i class="bx bx-map"></i>
+              <p class="location">Локация: неизвестно</p>
+            </div>
+            <div>
+              <i class="bx bx-envelope"></i>
+              <p class="email">Email: неизвестно</p>
+            </div>
+            <div>
+              <i class="bx bx-time-five"></i>
+              <p class="create__date">Дата создания: неизвестно</p>
+            </div>
+          </div>
+          <a href="" class="github__button" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+      </div>
+      <p class="mark">
+        Powered on <a href="https://github.com/" target="_blank">GitHub</a>
+      </p>
+    </div>
+    <p class="author">
+      made by
+      <a href="https://github.com/zeta-centauri" target="_blank">super_savik</a>
+    </p>
+    <script src="src/script.js"></script>
+  </body>
+</html>
